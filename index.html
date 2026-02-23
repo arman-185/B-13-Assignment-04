@@ -20,6 +20,7 @@
 </head>
 
 <body class="max-w-3xl mx-auto px-4 py-10 mb-10 bg-gray-200">
+    
     <!-- Section Header -->
 
     <header class="sticky top-0 z-50 bg-gray-200">
@@ -46,6 +47,26 @@
         <hr class="my-5 text-gray-400">
     </header>
 
+    <!-- main_section -->
+     <main>
+        <div class="flex items-center justify-between flex-wrap gap-2 mb-4">
+            <h2 class="text-xl font-bold text-black">Available Jobs</h2>
+            <span id="jobCount" class="text-xl text-gray-400 font-bold">8 Jobs</span>
+        </div>
+
+        <!-- main buttons -->
+
+        <div class="flex gap-1 bg-white border border-gray-300 rounded-lg p-1 w-max max-w-full overflow-x-auto mb-5">
+            <button id="all-filter-btn" onclick="switchTab('all-filter-btn')"
+                class="px-4 py-2 rounded-md text-sm font-medium cursor-pointer bg-blue-500 text-white">All</button>
+            <button id="interview-filter-btn" onclick="switchTab('interview-filter-btn')"
+                class="px-4 py-1.5 rounded-md text-sm font-medium cursor-pointer text-black">Interview</button>
+            <button id="rejected-filter-btn" onclick="switchTab('rejected-filter-btn')"
+                class="px-4 py-1.5 rounded-md text-sm font-medium cursor-pointer text-black">Rejected</button>
+        </div>
+
+   
+    </main>
 
 </body>
 
